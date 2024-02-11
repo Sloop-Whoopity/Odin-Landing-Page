@@ -8,18 +8,34 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    
 }
 
 .top {
     background-color: #1F2937;
     display: flex;
     flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
     flex-direction: column;
-    padding: 0 100px;
+    padding: 0 250px;
     padding-top: 20px;
     gap: 20px;
+    flex-wrap: wrap;
     
+}
+
+.text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.top .header {
+    color: white;
 }
 
 .top-header {
@@ -27,17 +43,32 @@ body{
     justify-content: space-between;
 }
 
+.top-header .header {
+    font-size: 24px;
+}
+
 .top-content {
     display: flex;
     justify-content: space-between;
+}
+
+.top-content .header {
+    font-size: 48px;
+    font-weight: 800px;
+    max-width: 300px;
 }
 
 .top-text {
     max-width: 400px;
 }
 
-.top-text .header{
-    max-width: 250px;
+
+.top-button {
+    background-color: #3882F6;
+    color: white;
+    padding: 15px;
+    border: 0px;
+    border-radius: 5px;
 }
 
 
@@ -49,6 +80,13 @@ body{
     justify-content: center;
     align-items: center;
     gap: 8px;
+    
+}
+
+.middle-top h2 {
+    font-size: 36px;
+    font-weight: 800px;
+    color: #1F2937;
 }
 
 .cardholder {
@@ -58,30 +96,54 @@ body{
 }
 
 .card p {
-    max-width: 150px;
+    max-width: 150px;;
 }
 
+.image {
+    border-radius: 5px;
+}
 
 .middle-middle {
+    box-sizing: border-box;
     background-color: #E5E7EB;
     display: flex;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
+    font-size: 26px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+    flex-wrap: wrap;
+    padding: 0px 350px;
+
+}
+
+.middle-middle p {
+    
 }
 
 .middle-bottom {
     background-color: #3882F6;
     box-sizing: border-box;
     flex-grow: 1;
-    margin: 50px 120px;
+    margin: 20px 120px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 80px;
+    color: white;
 }
 
+.middle-bottom button {
+    background-color: #3882F6;
+    border: white 2px solid;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
 
 .footer {
     background-color: #1F2937;
@@ -91,19 +153,6 @@ body{
     padding: 30px;
 }
 
-.top .header {
-    color: white;
-}
 
-.text {
-    font-size: 18px;
-    color: #E5E7EB;
-}
 
-.top-button {
-    background-color: #3882F6;
-    color: white;
-    padding: 15px;
-    border: 0px;
-    border-radius: 5px;
-}
+
