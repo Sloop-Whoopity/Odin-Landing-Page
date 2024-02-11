@@ -8,6 +8,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 
 .top {
@@ -19,6 +20,7 @@ body{
     flex-direction: column;
     /*padding: 0 250px;*/
     padding-top: 20px;
+    padding-bottom: 20px;
     gap: 20px;
     flex-wrap: wrap;
     
@@ -51,11 +53,14 @@ body{
 .top-content {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .top-content .header {
     font-size: 48px;
     font-weight: 800px;
+    margin-top: 0px;
+    margin-bottom: 18px;
     /* max-width: 300px; */
 }
 
@@ -65,11 +70,11 @@ body{
 
 
 .top-left-width {  
+    width: 300px;
     /*Instead of defining width in the previous two selectors. Declaring width
     here includes the header logo, which forces the top-header content to align with the 
     top-content since it shares the same width in the flex container.  Now space-evely, 
     and space-around share the same amount of space between both flex containers.*/
-    width: 300px;
 }
 
 .top-button {
@@ -133,27 +138,20 @@ body{
 
 }
 
-.middle-middle p {
+/* .middle-middle p {
     
-}
+} */
 
 .middle-bottom {
-    display: flex;
-    flex-grow: 1;
-    background-color: white;
-    padding: 20px 120px;
-}
-
-.action-container {
     background-color: #3882F6;
     box-sizing: border-box;
     flex-grow: 1;
-    /* margin: 20px 120px; */
+    margin: 20px 120px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /*padding: 0px 80px;*/
+    padding: 10px 0px;
     color: white;
 }
 
@@ -175,6 +173,6 @@ body{
 
 /*At this time, reducing the window size does not proportionally shrink all elements of the webpage
 This is because the padding, margin, and image width does not shrink.  Hopefully as you continue
-learning.  You will find a solution to this problem.  For now great job!
+learning.  You will find a solution to this problem.  For
 
 
