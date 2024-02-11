@@ -138,10 +138,17 @@ body{
 }
 
 .middle-bottom {
+    display: flex;
+    flex-grow: 1;
+    background-color: white;
+    padding: 20px 120px;
+}
+
+.action-container {
     background-color: #3882F6;
     box-sizing: border-box;
     flex-grow: 1;
-    margin: 20px 120px;
+    /* margin: 20px 120px; */
     border-radius: 10px;
     display: flex;
     align-items: center;
