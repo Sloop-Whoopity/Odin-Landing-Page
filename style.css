@@ -15,9 +15,9 @@ body{
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: auto;
+    flex-basis: 0;
     flex-direction: column;
-    padding: 0 250px;
+    /*padding: 0 250px;*/
     padding-top: 20px;
     gap: 20px;
     flex-wrap: wrap;
@@ -40,7 +40,8 @@ body{
 
 .top-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    
 }
 
 .top-header .header {
@@ -49,19 +50,27 @@ body{
 
 .top-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .top-content .header {
     font-size: 48px;
     font-weight: 800px;
-    max-width: 300px;
+    /* max-width: 300px; */
 }
 
-.top-text {
+/* .top-text {
     max-width: 400px;
-}
+} */
 
+
+.top-left-width {  
+    /*Instead of defining width in the previous two selectors. Declaring width
+    here includes the header logo, which forces the top-header content to align with the 
+    top-content since it shares the same width in the flex container.  Now space-evely, 
+    and space-around share the same amount of space between both flex containers.*/
+    width: 300px;
+}
 
 .top-button {
     background-color: #3882F6;
@@ -80,6 +89,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
     
 }
 
@@ -93,7 +103,9 @@ body{
     display: flex;
     gap: 50px;
     text-align: center;
+    flex-wrap: wrap;
 }
+
 
 .card p {
     max-width: 150px;;
@@ -101,6 +113,7 @@ body{
 
 .image {
     border-radius: 5px;
+    
 }
 
 .middle-middle {
@@ -132,8 +145,8 @@ body{
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0px 80px;
+    justify-content: space-around;
+    /*padding: 0px 80px;*/
     color: white;
 }
 
@@ -153,6 +166,8 @@ body{
     padding: 30px;
 }
 
-
+/*At this time, reducing the window size does not proportionally shrink all elements of the webpage
+This is because the padding, margin, and image width does not shrink.  Hopefully as you continue
+learning.  You will find a solution to this problem.  For now great job!
 
 
